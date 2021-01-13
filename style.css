@@ -95,9 +95,9 @@ li:last-child {
 
 .fundo {
   /* establish flex container */
-  -webkit-animation: spin 6s linear infinite;
-  -moz-animation: spin 6s linear infinite;
-  animation: spin 6s linear infinite;
+  -webkit-animation: spin 20s linear infinite;
+  -moz-animation: spin 20s linear infinite;
+  animation: spin 20s linear infinite;
 }
 
 .logo {
