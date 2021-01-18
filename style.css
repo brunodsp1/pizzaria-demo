@@ -46,9 +46,19 @@ h2 {
 .principal {
   align-items: center;
   justify-content: center;
-  background-color: black;
   width: 100%;
   height: auto;
+  background-image: url(/images/forno.png);
+}
+  
+.form {
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 70%, 0 50%);
 }
 
 .wrapper {
@@ -58,6 +68,7 @@ h2 {
 /* HOME */
 .menu {
   justify-content: space-around;
+  background-color: black;
 }
 
 .menu ul {
@@ -76,28 +87,28 @@ li:last-child {
   border-right: none;
 }
 .menu li a {
-    font-size: 1.5em;
+  font-size: 1.5em;
   text-align: center;
   padding: 14px 16px;
 }
 
 .menu li a:hover {
-    color: yellow;
-    font-weight: bold;
-  }
+  color: yellow;
+  font-weight: bold;
+}
 
 .home {
   height: 100vh;
-  display: flex; /* establish flex container */
-  flex-direction: column; /* stack flex items vertically */
   position: relative;
+  z-index: 0;
 }
 
 .fundo {
-  /* establish flex container */
+  position: relative;
   -webkit-animation: spin 20s linear infinite;
   -moz-animation: spin 20s linear infinite;
   animation: spin 20s linear infinite;
+  z-index: 4;
 }
 
 .logo {
@@ -122,4 +133,10 @@ li:last-child {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+.principal2 {
+  width: 100%;
+  height: 400px;
+  background-color: black;
 }
