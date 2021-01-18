@@ -48,9 +48,9 @@ h2 {
   justify-content: center;
   width: 100%;
   height: auto;
-  background-image: url(/images/forno.png);
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg);
 }
-  
+
 .form {
   background-color: black;
   position: absolute;
@@ -133,6 +133,21 @@ li:last-child {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+.preco {
+  background-color: white;
+  height: 60px;
+  clip-path: polygon(0 8%, 83% 0, 59% 8%, 100% 7%, 100% 91%, 15% 100%, 36% 85%, 0 93%);
+}
+
+.preco h1,
+.preco h2 {
+  color: black;
+}
+
+.preco h1 {
+  font-weight: bold;
 }
 
 .principal2 {
