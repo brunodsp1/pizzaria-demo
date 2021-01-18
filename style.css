@@ -48,7 +48,7 @@ h2 {
   justify-content: center;
   width: 100%;
   height: auto;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg);
+  background-color: darkred;
 }
 
 .form {
@@ -69,7 +69,9 @@ h2 {
 .menu {
   position: relative;
   justify-content: space-around;
-  background-color: black;
+  background-color: darkred;
+  padding: 40px 20px;
+  border-radius: 0 0 32px 32px;
 }
 
 .menu ul {
@@ -81,7 +83,8 @@ h2 {
 
 .menu li {
   display: inline;
-  border-right: 2px solid red;
+  padding: 10px 15px;
+  border-right: 2px solid white;
 }
 
 li:last-child {
@@ -90,11 +93,11 @@ li:last-child {
 .menu li a {
   font-size: 1.5em;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 14px;
 }
 
 .menu li a:hover {
-  color: yellow;
+  color: rgb(255, 196, 0);
   font-weight: bold;
 }
 
@@ -116,6 +119,8 @@ li:last-child {
 
 .logo {
   position: absolute;
+  width: 175px;
+  height: auto;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -153,13 +158,13 @@ li:last-child {
   margin-bottom: 7px;
 }
 
-ul {
+.promo-text ul {
   list-style: none; /* Remove list bullets */
   padding: 0;
   margin: 0;
 }
 
-li{
+.promo-text li{
   margin-left: 1em;
   list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAN0lEQVQoU2NkIBIwIqv7z8DwH5nPyMAAl4cz0BXBNMAUgxXiUoSseKAV4nMnimdgjiYqeAiFOwCJjBAL+kUG2wAAAABJRU5ErkJggg==");
 }
@@ -179,21 +184,23 @@ li{
   );
   padding: 10px;
   margin-top: 7px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
 }
 
 .preco h1,
 .preco h2 {
   color: black;
+  font-weight: bold;
 }
 
 .preco h1 {
-  font-weight: bold;
+
   font-size: 2.5em;
 }
 
-.principal2 {
+/* OFERTA ESPECIAL */
+.oferta-esp {
   width: 100%;
   height: 400px;
   background-color: black;
