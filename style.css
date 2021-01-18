@@ -67,6 +67,7 @@ h2 {
 
 /* HOME */
 .menu {
+  position: relative;
   justify-content: space-around;
   background-color: black;
 }
@@ -105,6 +106,8 @@ li:last-child {
 
 .fundo {
   position: relative;
+  width: 700px;
+  height: auto;
   -webkit-animation: spin 20s linear infinite;
   -moz-animation: spin 20s linear infinite;
   animation: spin 20s linear infinite;
@@ -116,6 +119,7 @@ li:last-child {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  z-index: 5;
 }
 
 @-moz-keyframes spin {
@@ -134,11 +138,49 @@ li:last-child {
     transform: rotate(360deg);
   }
 }
+.promo {
+  margin-bottom: 50px;
+}
+
+.promo-text {
+  margin-left: 10px;
+  margin-right: 40px;
+}
+
+.promo-text h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 7px;
+}
+
+ul {
+  list-style: none; /* Remove list bullets */
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  margin-left: 1em;
+  list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAN0lEQVQoU2NkIBIwIqv7z8DwH5nPyMAAl4cz0BXBNMAUgxXiUoSseKAV4nMnimdgjiYqeAiFOwCJjBAL+kUG2wAAAABJRU5ErkJggg==");
+}
 
 .preco {
   background-color: white;
-  height: 60px;
-  clip-path: polygon(0 8%, 83% 0, 59% 8%, 100% 7%, 100% 91%, 15% 100%, 36% 85%, 0 93%);
+  height: 70px;
+  clip-path: polygon(
+    0 8%,
+    83% 0,
+    70% 10%,
+    100% 5%,
+    100% 90%,
+    15% 100%,
+    30% 80%,
+    0 90%
+  );
+  padding: 10px;
+  margin-top: 7px;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .preco h1,
@@ -148,6 +190,7 @@ li:last-child {
 
 .preco h1 {
   font-weight: bold;
+  font-size: 2.5em;
 }
 
 .principal2 {
