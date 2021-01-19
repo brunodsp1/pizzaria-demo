@@ -145,6 +145,12 @@ li:last-child {
 }
 .promo {
   margin-bottom: 50px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.promo-img {
+  margin: auto;
 }
 
 .promo-text {
@@ -164,7 +170,7 @@ li:last-child {
   margin: 0;
 }
 
-.promo-text li{
+.promo-text li {
   margin-left: 1em;
   list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAN0lEQVQoU2NkIBIwIqv7z8DwH5nPyMAAl4cz0BXBNMAUgxXiUoSseKAV4nMnimdgjiYqeAiFOwCJjBAL+kUG2wAAAABJRU5ErkJggg==");
 }
@@ -195,7 +201,6 @@ li:last-child {
 }
 
 .preco h1 {
-
   font-size: 2.5em;
 }
 
@@ -205,3 +210,71 @@ li:last-child {
   height: 400px;
   background-color: black;
 }
+
+.oferta-esp-text h2 {
+  font-size: 4em;
+  font-weight: 900;
+}
+
+.oferta-esp-text ul {
+  list-style: none; /* Remove list bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.oferta-esp-text li {
+  margin-left: 1em;
+  list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAN0lEQVQoU2NkIBIwIqv7z8DwH5nPyMAAl4cz0BXBNMAUgxXiUoSseKAV4nMnimdgjiYqeAiFOwCJjBAL+kUG2wAAAABJRU5ErkJggg==");
+}
+
+.oferta-esp-img img {
+  height: auto;
+  width: 400px;
+}
+
+/* MAIS PEDIDAS */
+.mais-pedidas {
+  width: 100%;
+  background-color: darkred;
+  background-image: url("images/chef.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.title-pedidas {
+  background-color: darkred;
+  padding: 10px;
+}
+
+.pedidas-content {
+  margin-top: 500px;
+}
+
+.title-pedidas {
+  margin: 30px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.pedidas-text {
+  width:100%;
+  justify-content: space-around;
+}
+
+.pedidas-text h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 7px;
+}
+
+.preco-pedidas {
+  width: 150px;
+}
+
+.preco h3 {
+  color: black;
+  font-weight: bold;
+  font-size: 2.4em;
+  margin-bottom: 7px;
+}
+
