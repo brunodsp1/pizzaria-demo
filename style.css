@@ -41,7 +41,11 @@ h2 {
 }
 
 /* SOCIAL ICONS */
-
+.fa-whatsapp,
+.fa-envelope {
+  display: flex !important;
+  margin-right: 5px;
+}
 /* PRINCIPAL */
 .principal {
   align-items: center;
@@ -257,7 +261,7 @@ li:last-child {
 }
 
 .pedidas-text {
-  width:100%;
+  width: 100%;
   justify-content: space-around;
 }
 
@@ -269,6 +273,7 @@ li:last-child {
 
 .preco-pedidas {
   width: 150px;
+  margin-bottom: 40px;
 }
 
 .preco h3 {
@@ -278,3 +283,48 @@ li:last-child {
   margin-bottom: 7px;
 }
 
+/* PREMIUM */
+
+/* FOOTER */
+.footer {
+  background-color: black;
+}
+
+.wrapper-foo {
+  width: 80%;
+  margin: 70px 0;
+}
+
+.logo-foo {
+  width: 50%;
+}
+.texto-foo {
+  width: 50%;
+}
+
+.texto-foo h1 {
+  font-weight: bold;
+}
+.rule {
+  width: 70%;
+  padding-top: 20px;
+  border-bottom: 2px solid #fff;
+}
+
+.mail-foo {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.mail-foo a {
+  width: 100%;
+}
+
+.numero {
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.numero h2 {
+  margin: 0 10px;
+}
