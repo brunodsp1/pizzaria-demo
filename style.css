@@ -390,7 +390,7 @@ li:last-child {
   padding: 15px 0;
   margin: 10px 0;
   width: 65%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
 }
 
 .contato-bt h2 {
@@ -466,7 +466,7 @@ input[type="submit"] {
   cursor: pointer;
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 6px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
