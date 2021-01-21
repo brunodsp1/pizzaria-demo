@@ -42,6 +42,7 @@ h2 {
 
 /* SOCIAL ICONS */
 .fa-whatsapp,
+.fa-phone,
 .fa-envelope {
   display: flex !important;
   margin-right: 5px;
@@ -327,4 +328,153 @@ li:last-child {
 
 .numero h2 {
   margin: 0 10px;
+}
+
+/* PÁGINA DE CONTATO */
+.bg {
+  background-color: darkred;
+}
+
+.logo-cont {
+  position: absolute;
+  width: 175px;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -80%);
+  z-index: 5;
+}
+
+.wrapper-contato {
+  width: 80%;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 250px;
+}
+
+.form-cont {
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 50% 70%, 0 30%);
+}
+
+.pag-contato {
+  margin-top: 400px;
+}
+
+.pag-contato,
+.pag-contato1,
+.pag-contato2 {
+  z-index: 4;
+  width: 100%;
+}
+
+.pag-contato1 h1 {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  font-weight: bold;
+  padding: 13px 0;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.contato-bt {
+  background-color: white;
+  border-radius: 15px;
+  color: black;
+  padding: 15px 0;
+  margin: 10px 0;
+  width: 65%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.contato-bt h2 {
+  color: black;
+  margin-left: 10px;
+}
+
+.contato-bt:hover {
+  background-color: rgb(255, 196, 0);
+}
+
+.pag-contato-ou h1 {
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid black;
+  margin: 0 30px;
+}
+
+.pag-contato2 h1 {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  font-weight: bold;
+  padding: 13px 0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+select {
+  width: 48%; /* Full width */
+  padding: 12px; /* Some padding */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 6px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+textarea {
+  width: 100%; /* Full width */
+  height: 150px;
+  padding: 12px; /* Some padding */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 6px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type="tel"] {
+  float: right;
+  width: 48%; /* Full width */
+  padding: 12px; /* Some padding */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 6px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type="email"] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 6px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  width: 100%;
+  background-color: #fff;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color:  rgb(255, 196, 0);
+  font-weight: bold;
+}
+
+.fix-nome {
+  width: 100%;
 }
