@@ -114,7 +114,7 @@ li:last-child {
 
 .fundo {
   position: relative;
-  width: 700px;
+  width: 600px;
   height: auto;
   -webkit-animation: spin 60s linear infinite;
   -moz-animation: spin 60s linear infinite;
