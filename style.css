@@ -142,11 +142,13 @@ a {
   background-attachment: fixed;
   box-shadow: inset 0 0 0 2000px rgba(106, 0, 10, 0.6);
 }
+
 .form {
   background-image: url("images/fumaca.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom 100px right 50%;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
   position: absolute;
   left: 0;
   top: 0;
@@ -213,7 +215,7 @@ li:last-child {
 }
 
 .home {
-  height: 120vh;
+  height: 110vh;
   position: relative;
   z-index: 0;
 }
@@ -397,6 +399,7 @@ li:last-child {
   width: 100%;
   justify-content: space-around;
 }
+
 .pedidas-item {
   width: 350px;
 }
