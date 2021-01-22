@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 14pt;
+  font-size: 11pt;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   color: #fff;
@@ -22,7 +22,7 @@ a {
   color: #fff;
 }
 h2 {
-  font-size: 14pt;
+  font-size: 11pt;
 }
 
 .row {
@@ -190,7 +190,7 @@ li:last-child {
 }
 
 .menu li a {
-  font-size: 16pt;
+  font-size: 14pt;
   text-align: center;
   padding: 14px 14px;
 }
