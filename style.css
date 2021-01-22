@@ -54,8 +54,11 @@ h2 {
   width: 100%;
   height: auto;
   background-color: #6a000a;
+  background-image: url("images/luann-hunt-tv8e9oQx-H4-unsplash-scaled.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
-
 .form {
   background-color: black;
   position: absolute;
@@ -107,7 +110,7 @@ li:last-child {
 }
 
 .home {
-  height: 100vh;
+  height: 120vh;
   position: relative;
   z-index: 0;
 }
@@ -534,10 +537,10 @@ input[type="submit"]:hover {
   margin-top: 30px;
 }
 
-.texto-local h3{
+.texto-local h3 {
   width: 31%;
   padding: 10px 0;
-  float:right; 
+  float: right;
   font-weight: bold;
   margin-top: 20px;
   border-top: 2px solid white;
