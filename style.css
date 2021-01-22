@@ -2,10 +2,10 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 100%;
+  font-size: 14pt;
   font-family: "Montserrat", sans-serif;
+  font-weight: 300;
   color: #fff;
-  font-weight: normal;
   box-sizing: border-box;
   border: none;
   outline: none;
@@ -22,7 +22,7 @@ a {
   color: #fff;
 }
 h2 {
-  font-size: 1em;
+  font-size: 14pt;
 }
 
 .row {
@@ -161,11 +161,14 @@ h2 {
 
 /* HOME */
 .menu {
+  display: flex;
+  flex-direction: row-reverse;
   position: relative;
-  justify-content: space-around;
+  width: 100%;
   background-color: #6a000a;
   padding: 25px 15px;
-  border-radius: 0 0 32px 32px;
+  float: right;
+  z-index: 7;
 }
 
 .menu ul {
@@ -177,13 +180,15 @@ h2 {
 
 .menu li {
   display: inline;
+  position: relative;
   padding: 10px 15px;
-  border-right: 2px solid white;
+  border-right: 2px solid black;
 }
 
 li:last-child {
   border-right: none;
 }
+
 .menu li a {
   font-size: 1.3em;
   text-align: center;
@@ -191,7 +196,6 @@ li:last-child {
 }
 
 .menu li a:hover {
-  color: rgb(255, 196, 0);
   font-weight: bold;
 }
 
@@ -213,7 +217,7 @@ li:last-child {
   width: 100%;
   height: auto;
   padding-top: 550px;
-  z-index:5;
+  z-index: 5;
 }
 
 .fundo {
@@ -310,16 +314,17 @@ li:last-child {
 }
 
 .preco h1 {
-  font-family: 'Anton';
+  font-family: "Anton";
   font-size: 2.5em;
-line-height: 1em;
+  line-height: 1em;
 }
 
 /* OFERTA ESPECIAL */
 .oferta-esp {
   width: 100%;
   height: 400px;
-  background-color: black;
+  background-image: url("images/fundo-especial.png");
+  background-size: contain;
 }
 
 .oferta-esp-text h2 {
@@ -331,6 +336,7 @@ line-height: 1em;
   list-style: none; /* Remove list bullets */
   padding: 0;
   margin: 0;
+  width: 50%;
 }
 
 .oferta-esp-text li {
@@ -385,7 +391,7 @@ line-height: 1em;
 
 .preco h3 {
   color: black;
-  font-family: 'Anton';
+  font-family: "Anton";
   font-weight: bold;
   font-size: 2.5em;
   line-height: 1em;
@@ -400,12 +406,12 @@ line-height: 1em;
 }
 
 .wrapper-foo {
-  width: 696px;
+  width: 80%;
   margin: 50px 0;
 }
 
 .logo-foo {
-  width: 40%;
+  width: 20%;
 }
 .texto-foo {
   float: right;
@@ -415,7 +421,7 @@ line-height: 1em;
 .wrapper-texto-foo {
   display: flex;
   flex-direction: row-reverse;
-  width: 60%;
+  width: 80%;
 }
 
 .texto-foo h1 {
@@ -428,20 +434,12 @@ line-height: 1em;
   border-bottom: 2px solid #fff;
 }
 
-.mail-foo {
-  padding-top: 10px;
-  width: 100%;
-}
-
-.mail-foo a {
-  width: 100%;
-}
-
 .numero {
   padding: 10px;
   padding-bottom: 0px;
 }
-.numero div .fa-phone {
+.numero div .fa-phone,
+.numero div .fa-envelope {
   margin-left: 10px;
 }
 
