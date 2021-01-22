@@ -297,28 +297,36 @@ li:last-child {
 }
 
 .wrapper-foo {
-  width: 80%;
-  margin: 70px 0;
+  width: 696px;
+  margin: 50px 0;
 }
 
 .logo-foo {
-  width: 50%;
+  width: 40%;
 }
 .texto-foo {
-  width: 50%;
+  float:right;
+  text-align: center;
+}
+
+.wrapper-texto-foo{
+  display:flex;
+  flex-direction:row-reverse;
+  width: 60%;
 }
 
 .texto-foo h1 {
   font-weight: bold;
 }
+
 .rule {
   width: 70%;
-  padding-top: 20px;
+  padding-top: 10px;
   border-bottom: 2px solid #fff;
 }
 
 .mail-foo {
-  padding-top: 20px;
+  padding-top: 10px;
   width: 100%;
 }
 
@@ -327,12 +335,15 @@ li:last-child {
 }
 
 .numero {
-  padding: 20px;
+  padding: 10px;
   padding-bottom: 0px;
+}
+.numero div .fa-phone {
+  margin-left:10px;
 }
 
 .numero h2 {
-  margin: 0 10px;
+  margin-left: 10px;
 }
 
 /* PÁGINA DE CONTATO */
