@@ -54,12 +54,12 @@ h2 {
   width: 100%;
   height: auto;
   background-color: #6a000a;
-  background-image: url("images/luann-hunt-tv8e9oQx-H4-unsplash-scaled.jpg");
+  background-image: url("images/forno.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
-  box-shadow:inset 0 0 0 2000px rgba(106, 0, 10, 0.6);
+  box-shadow: inset 0 0 0 2000px rgba(106, 0, 10, 0.6);
 }
 .form {
   background-color: black;
@@ -80,7 +80,7 @@ h2 {
   position: relative;
   justify-content: space-around;
   background-color: #6a000a;
-  padding: 40px 20px;
+  padding: 25px 15px;
   border-radius: 0 0 32px 32px;
 }
 
@@ -101,7 +101,7 @@ li:last-child {
   border-right: none;
 }
 .menu li a {
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: center;
   padding: 14px 14px;
 }
@@ -342,11 +342,11 @@ li:last-child {
 
 .logo-cont {
   position: absolute;
-  width: 175px;
+  width: 135px;
   height: auto;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -150%);
   z-index: 5;
 }
 
@@ -364,7 +364,7 @@ li:last-child {
   top: 0;
   width: 100%;
   height: 100vh;
-  clip-path: polygon(0 0, 100% 0, 100% 30%, 50% 70%, 0 30%);
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 50% 50%, 0 20%);
 }
 
 .pag-contato {
@@ -464,8 +464,8 @@ input[type="email"] {
 /* Style the submit button with a specific background color etc */
 input[type="submit"] {
   width: 100%;
-  background-color: #fff;
-  color: black;
+  background-color: #222121;
+  color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
@@ -487,13 +487,13 @@ input[type="submit"]:hover {
 /* LOCALIZAÇÃO */
 
 .pag-local {
-  margin-top: 400px;
+  margin-top: 250px;
   z-index: 4;
   width: 100%;
 }
 
 .wrapper-local {
-  width: 55%;
+  width: 696px;
   justify-content: center;
   align-items: flex-start;
   padding-bottom: 70px;
@@ -501,16 +501,17 @@ input[type="submit"]:hover {
 
 .titulo-local h1 {
   color: white;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .titulo-local h2 {
   color: white;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bolder;
   margin-bottom: 10px;
 }
 .mapa {
+  display: flex;
   width: 100%;
   position: relative;
   z-index: 2;
