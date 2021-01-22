@@ -305,13 +305,13 @@ li:last-child {
   width: 40%;
 }
 .texto-foo {
-  float:right;
+  float: right;
   text-align: center;
 }
 
-.wrapper-texto-foo{
-  display:flex;
-  flex-direction:row-reverse;
+.wrapper-texto-foo {
+  display: flex;
+  flex-direction: row-reverse;
   width: 60%;
 }
 
@@ -339,7 +339,7 @@ li:last-child {
   padding-bottom: 0px;
 }
 .numero div .fa-phone {
-  margin-left:10px;
+  margin-left: 10px;
 }
 
 .numero h2 {
@@ -362,7 +362,7 @@ li:last-child {
 }
 
 .wrapper-contato {
-  width: 80%;
+  width: 75%;
   justify-content: center;
   align-items: flex-start;
   padding-bottom: 250px;
@@ -379,7 +379,7 @@ li:last-child {
 }
 
 .pag-contato {
-  margin-top: 400px;
+  margin-top: 250px;
 }
 
 .pag-contato,
@@ -396,7 +396,7 @@ li:last-child {
   font-weight: bold;
   padding: 13px 0;
   border-radius: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .contato-bt {
@@ -405,7 +405,7 @@ li:last-child {
   color: black;
   padding: 15px 0;
   margin: 10px 0;
-  width: 65%;
+  width: 75%;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
 }
 
@@ -442,7 +442,8 @@ select {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 6px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical;
+  color: black;
 }
 textarea {
   width: 100%; /* Full width */
@@ -451,7 +452,8 @@ textarea {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 6px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical;
+  color: black;
 }
 
 input[type="tel"] {
@@ -461,7 +463,8 @@ input[type="tel"] {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 6px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical;
+  color: black;
 }
 input[type="email"] {
   width: 100%; /* Full width */
@@ -469,7 +472,8 @@ input[type="email"] {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 6px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical;
+  color: black;
 }
 
 /* Style the submit button with a specific background color etc */
