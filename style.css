@@ -47,6 +47,90 @@ h2 {
   display: flex !important;
   margin-right: 5px;
 }
+
+/* FADEIN */
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes transition {
+  0% {
+    left: 100px;
+    top: -50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes transition {
+  0% {
+    left: 100px;
+    top: -50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes transition {
+  0% {
+    left: 100px;
+    top: -50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes transition {
+  0% {
+    left: 100px;
+    top: -50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 500ms ease-in-out;
+  -moz-animation: fadeIn 500ms ease-in-out;
+  -o-animation: fadeIn 500ms ease-in-out;
+  animation: fadeIn 500ms ease-in-out;
+}
+
 /* PRINCIPAL */
 .principal {
   align-items: center;
@@ -115,6 +199,21 @@ li:last-child {
   height: 120vh;
   position: relative;
   z-index: 0;
+}
+
+.fita1 {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding-top: 230px;
+}
+
+.fita2 {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding-top: 600px;
+  z-index:5;
 }
 
 .fundo {
@@ -211,7 +310,9 @@ li:last-child {
 }
 
 .preco h1 {
+  font-family: 'Anton';
   font-size: 2.5em;
+line-height: 1em;
 }
 
 /* OFERTA ESPECIAL */
@@ -284,8 +385,10 @@ li:last-child {
 
 .preco h3 {
   color: black;
+  font-family: 'Anton';
   font-weight: bold;
-  font-size: 2.4em;
+  font-size: 2.5em;
+  line-height: 1em;
   margin-bottom: 7px;
 }
 
