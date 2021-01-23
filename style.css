@@ -457,19 +457,18 @@ li:last-child {
   position: relative;
   transform: rotate(-10deg);
   z-index: 5;
-  bottom: 300px;
+  bottom: 280px;
 }
 
 .pizza-pr {
   position: relative;
-  transform: rotate(-10deg);
   left: -80px;
   z-index: 4;
-  bottom: 300px;
+  bottom: 280px;
 }
 .premium-tex {
   position: relative;
-  bottom: 300px;
+  bottom: 280px;
 }
 
 .fita-pr2 {
