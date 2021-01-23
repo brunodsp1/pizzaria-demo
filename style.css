@@ -347,6 +347,8 @@ li:last-child {
 
 .oferta-esp-text img {
   margin-bottom: 15px;
+  animation-name: transition;
+  animation-duration: 2s;
 }
 
 .oferta-esp-text h2 {
