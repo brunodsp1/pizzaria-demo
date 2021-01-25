@@ -776,16 +776,14 @@ input[type="submit"]:hover {
 }
 
 .tipos-item:hover {
-  background-color: #6a000a;
+  background-color: rgb(255, 196, 0);
   color: white;
   font-weight: bold;
 }
 
 .pizzas {
   width: 80%;
-  padding: 40px;
+  padding: 100px;
+  padding-top: 0px;
   border-left: 2px solid rgba(34, 33, 33, 0.5);
-}
-
-.pizzas img {
 }
