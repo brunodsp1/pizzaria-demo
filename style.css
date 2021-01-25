@@ -781,10 +781,11 @@ input[type="submit"]:hover {
   font-weight: bold;
 }
 
-.pizzas{
+.pizzas {
   width: 80%;
+  padding: 40px;
+  border-left: 2px solid rgba(34, 33, 33, 0.5);
 }
 
-.pizzas img{
-  border-left: 2px solid rgba(34, 33, 33, 0.5);
+.pizzas img {
 }
