@@ -37,6 +37,10 @@ a {
   justify-content: center;
 }
 
+.hidden {
+  display: none !important;
+}
+
 /* SOCIAL ICONS */
 .fa-whatsapp,
 .fa-phone,
@@ -707,7 +711,7 @@ input[type="submit"]:hover {
   margin-top: 30px;
 }
 
-.texto-local h2{
+.texto-local h2 {
   color: black;
 }
 
@@ -718,4 +722,72 @@ input[type="submit"]:hover {
   font-weight: bold;
   margin-top: 20px;
   border-top: 2px solid rgba(106, 0, 10, 0.5);
+}
+
+/* CARDAPIO */
+
+.cardapio {
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.wrapper-car {
+  width: 70%;
+  justify-content: center;
+}
+
+.tipos {
+  width: 20%;
+}
+
+.tipos-item {
+  padding: 20px;
+  color: black;
+  text-align: right;
+  border-top: 1px solid rgba(34, 33, 33, 0.5);
+  border-bottom: 1px solid rgba(34, 33, 33, 0.5);
+}
+
+.tipos-item:first-child {
+  padding: 20px;
+  border-top: 0px;
+  border-bottom: 1px solid rgba(34, 33, 33, 0.5);
+}
+
+.tipos-item:last-child {
+  padding: 20px;
+  border-top: 1px solid rgba(34, 33, 33, 0.5);
+  border-bottom: 0px;
+}
+
+.tipos-item a {
+  color: inherit;
+  font-weight: inherit;
+}
+.tipos-item h1 {
+  color: inherit;
+  font-weight: inherit;
+}
+
+.tipos-item a h1 {
+  color: inherit;
+  font-weight: inherit;
+}
+
+.tipos-item:hover {
+  background-color: #6a000a;
+  color: white;
+  font-weight: bold;
+}
+
+.pizzas {
+  width: 80%;
+  height: 600px;
+  border-left: 2px solid rgba(34, 33, 33, 0.5);
+
+}
+
+.tipos:hover .pizzas img {
+  display:flex;
 }

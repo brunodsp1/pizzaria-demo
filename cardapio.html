@@ -16,15 +16,84 @@
     />
   </head>
   <body>
-      <div class="menu row">
-        <ul>
-          <li><a href="index.html">Promoções</a></li>
-          <li><a href="localizacao.html">Localização</a></li>
-          <li><a href="contato.html">Contato</a></li>
-          <li><a href="cardapio.html">Cardápio</a></li>
-        </ul>
+    <script>
+      $("document").ready(function () {
+        $("#ca-queijo").mouseenter(function () {
+          $("#pizzas").attr("src", "images/ca-queijo.jpg");
+        });
+      });
+      $("document").ready(function () {
+        $("#ca-calabresa").mouseenter(function () {
+          $("#pizzas").attr("src", "images/ca-calabresa.jpg");
+        });
+      });
+      $("document").ready(function () {
+        $("#ca-frango").mouseenter(function () {
+          $("#pizzas").attr("src", "images/ca-frango.jpg");
+        });
+      });
+      $("document").ready(function () {
+        $("#ca-presunto").mouseenter(function () {
+          $("#pizzas").attr("src", "images/ca-presunto.jpg");
+        });
+      });
+      $("document").ready(function () {
+        $("#ca-peixe").mouseenter(function () {
+          $("#pizzas").attr("src", "images/ca-peixe.jpg");
+        });
+      });
+      $("document").ready(function () {
+        $("#ca-bacon").mouseenter(function () {
+          $("#pizzas").attr("src", "images/ca-bacon.png");
+        });
+      });
+      $("document").ready(function () {
+        $("#ca-lombo").mouseenter(function () {
+          $("#pizzas").attr("src", "images/ca-lombo.jpg");
+        });
+      });
+      $("document").ready(function () {
+        $("#ca-vegetarianas").mouseenter(function () {
+          $("#pizzas").attr("src", "images/ca-vegetarianas.jpg");
+        });
+      });
+      $("document").ready(function () {
+        $("#ca-doces").mouseenter(function () {
+          $("#pizzas").attr("src", "images/ca-doces.jpg");
+        });
+      });
+    </script>
+    <div class="menu row">
+      <ul>
+        <li><a href="index.html">Promoções</a></li>
+        <li><a href="localizacao.html">Localização</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+      </ul>
+    </div>
+    <img class="logo-menu" src="images/logo.png" alt="logo" width="146px" />
+    <div class="cardapio row center">
+      <div class="wrapper-car row">
+        <div class="tipos">
+          <div class="tipos-item" id="ca-queijo">
+            <h1>QUEIJO</h1>
+          </div>
+          <div class="tipos-item" id="ca-calabresa"><h1>CALABRESA</h1></div>
+          <div class="tipos-item" id="ca-frango"><h1>FRANGO</h1></div>
+          <div class="tipos-item" id="ca-presunto"><h1>PRESUNTO</h1></div>
+          <div class="tipos-item" id="ca-peixe"><h1>PEIXE</h1></div>
+          <div class="tipos-item" id="ca-bacon"><h1>BACON</h1></div>
+          <div class="tipos-item" id="ca-lombo"><h1>LOMBO</h1></div>
+          <div class="tipos-item" id="ca-vegetarianas">
+            <h1>VEGETARIANAS</h1>
+          </div>
+          <div class="tipos-item" id="ca-doces"><h1>DOCES</h1></div>
+        </div>
+        <div class="pizzas">
+          <img id="pizzas" src="images/ca-queijo.jpg" />
+        </div>
       </div>
-      <img class="logo-menu" src="images/logo.png" alt="logo" width="146px" />
+    </div>
     <div class="footer row center">
       <div class="wrapper-foo row">
         <div class="logo-foo row">
