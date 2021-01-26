@@ -76,54 +76,6 @@
           })
           .scroll(); //invoke scroll-handler on page-load
       });
-      $(window).on("load", function () {
-        $(window)
-          .scroll(function () {
-            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-            $(".fadeScroll2").each(function () {
-              /* Check the location of each desired element */
-              var objectBottom = $(this).offset().top + $(this).outerHeight();
-
-              /* If the element is completely within bounds of the window, fade it in */
-              if (objectBottom < windowBottom) {
-                //object comes into view (scrolling down)
-                if ($(this).css("opacity") == 0) {
-                  $(this).fadeTo(1800, 1);
-                }
-              } else {
-                //object goes out of view (scrolling up)
-                if ($(this).css("opacity") == 1) {
-                  $(this).fadeTo(500, 0);
-                }
-              }
-            });
-          })
-          .scroll(); //invoke scroll-handler on page-load
-      });
-      $(window).on("load", function () {
-        $(window)
-          .scroll(function () {
-            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-            $(".fadeScroll3").each(function () {
-              /* Check the location of each desired element */
-              var objectBottom = $(this).offset().top + $(this).outerHeight();
-
-              /* If the element is completely within bounds of the window, fade it in */
-              if (objectBottom < windowBottom) {
-                //object comes into view (scrolling down)
-                if ($(this).css("opacity") == 0) {
-                  $(this).fadeTo(2100, 1);
-                }
-              } else {
-                //object goes out of view (scrolling up)
-                if ($(this).css("opacity") == 1) {
-                  $(this).fadeTo(500, 0);
-                }
-              }
-            });
-          })
-          .scroll(); //invoke scroll-handler on page-load
-      });
     </script>
     <div class="form"></div>
     <img class="fita1" alt="fita 'cuidado, quente'" src="images/fita-up.png" />
@@ -145,7 +97,7 @@
       <div class="wrapper column">
         <div class="home column center">
           <img class="fundo center" alt="pizza" src="images/pizza-home.webp" />
-          <a href="https://wa.me/999999999">
+          <a class="logo center" href="https://wa.me/999999999">
             <img class="logo center" alt="logo" src="images/clique.png"
           /></a>
         </div>

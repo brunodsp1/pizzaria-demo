@@ -194,7 +194,7 @@ li:last-child {
   position: absolute;
   width: 100%;
   height: auto;
-  padding-top: 550px;
+  margin-top: 550px;
   z-index: 5;
 }
 
@@ -215,7 +215,7 @@ li:last-child {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: 5;
+  z-index: 10;
 }
 
 @-moz-keyframes spin {
