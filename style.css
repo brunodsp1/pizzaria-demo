@@ -789,7 +789,6 @@ input[type="submit"]:hover {
 .tipos-item:hover {
   background-color:rgb(255, 196, 0);
   color: white;
-  font-weight: bold;
 }
 
 .pizzas {
