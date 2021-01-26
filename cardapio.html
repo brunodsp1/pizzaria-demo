@@ -18,48 +18,34 @@
   <body>
     <script>
       function changeClass(elClass) {
-        var divsLenght = document.getElementsByTagName("div").length;
-        for (var i = 0; i < divsLenght; i++) {
-          document.getElementsByTagName("div")[i].className = "tabInactive";
+        var divsLenght = document.getElementsByClassName("menuc").length;
+        for (i = 0; i < divsLenght; i++) {
+          document.getElementsByClassName("menuc")[i].className =
+            "tipos-item menuc";
         }
-        elClass.className = "tabActive";
+        elClass.className = "tipos-item c-active menuc";
       }
-
-      $("document").ready(function () {
-        $("#ca-queijo").mouseenter(function () {
-          $("#pizzas").attr("src", "images/ca-queijo.jpg");
-        });
-      });
-      $("document").ready(function () {
-        $("#ca-calabresa").mouseenter(function () {
-          $("#pizzas").attr("src", "images/ca-calabresa.jpg");
-        });
-      });
-      $("document").ready(function () {
-        $("#ca-frango").mouseenter(function () {
-          $("#pizzas").attr("src", "images/ca-frango.jpg");
-        });
-      });
-      $("document").ready(function () {
-        $("#ca-peixe").mouseenter(function () {
-          $("#pizzas").attr("src", "images/ca-peixe.jpg");
-        });
-      });
-      $("document").ready(function () {
-        $("#ca-bacon").mouseenter(function () {
-          $("#pizzas").attr("src", "images/ca-bacon.jpg");
-        });
-      });
-      $("document").ready(function () {
-        $("#ca-vegetarianas").mouseenter(function () {
-          $("#pizzas").attr("src", "images/ca-vegetarianas.jpg");
-        });
-      });
-      $("document").ready(function () {
-        $("#ca-doces").mouseenter(function () {
-          $("#pizzas").attr("src", "images/ca-doces.jpg");
-        });
-      });
+      function changeQueijo() {
+        document.getElementById("pizzas").src = "images/ca-queijo.jpg";
+      }
+      function changeCalabresa() {
+        document.getElementById("pizzas").src = "images/ca-calabresa.jpg";
+      }
+      function changeFrango() {
+        document.getElementById("pizzas").src = "images/ca-frango.jpg";
+      }
+      function changePeixe() {
+        document.getElementById("pizzas").src = "images/ca-peixe.jpg";
+      }
+      function changeBacon() {
+        document.getElementById("pizzas").src = "images/ca-bacon.jpg";
+      }
+      function changeVegetarianas() {
+        document.getElementById("pizzas").src = "images/ca-vegetarianas.jpg";
+      }
+      function changeDoces() {
+        document.getElementById("pizzas").src = "images/ca-doces.jpg";
+      }
     </script>
     <div class="menu row">
       <ul>
@@ -75,22 +61,56 @@
     <div class="cardapio row center">
       <div class="wrapper-car row">
         <div class="tipos">
-          <div class="tipos-item" id="ca-queijo">
+          <div
+            class="tipos-item inactive menuc"
+            onclick="changeClass(this);changeQueijo()"
+          >
             <h1>QUEIJO</h1>
           </div>
-          <div class="tipos-item" id="ca-calabresa"><h1>CALABRESA</h1></div>
-          <div class="tipos-item" id="ca-frango"><h1>FRANGO</h1></div>
-          <div class="tipos-item" id="ca-peixe"><h1>PEIXE</h1></div>
-          <div class="tipos-item" id="ca-bacon"><h1>BACON</h1></div>
-          <div class="tipos-item" id="ca-vegetarianas">
+          <div
+            class="tipos-item inactive menuc"
+            onclick="changeClass(this);changeCalabresa()"
+          >
+            <h1>CALABRESA</h1>
+          </div>
+          <div
+            class="tipos-item inactive menuc"
+            onclick="changeClass(this);changeFrango()"
+          >
+            <h1>FRANGO</h1>
+          </div>
+          <div
+            class="tipos-item inactive menuc"
+            onclick="changeClass(this);changePeixe()"
+          >
+            <h1>PEIXE</h1>
+          </div>
+          <div
+            class="tipos-item inactive menuc"
+            onclick="changeClass(this);changeBacon()"
+          >
+            <h1>BACON</h1>
+          </div>
+          <div
+            class="tipos-item inactive menuc"
+            onclick="changeClass(this);changeVegetarianas()"
+          >
             <h1>VEGETARIANAS</h1>
           </div>
-          <div class="tipos-item" id="ca-doces"><h1>DOCES</h1></div>
+          <div
+            class="tipos-item inactive menuc"
+            onclick="changeClass(this);changeDoces()"
+          >
+            <h1>DOCES</h1>
+          </div>
         </div>
         <div class="pizzas">
           <img id="pizzas" alt="cardapio" src="images/ca-queijo.jpg" />
         </div>
       </div>
+    </div>
+    <div style="width: 100%; padding: 0; margin: 0">
+      <img src="images/cartoes-pizzaria.jpg" width="100%" />
     </div>
     <div class="footer row center">
       <div class="wrapper-foo row">

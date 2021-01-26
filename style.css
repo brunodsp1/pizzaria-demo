@@ -179,7 +179,7 @@ li:last-child {
 
 .menu li a:hover {
   font-weight: bold;
-  color:rgb(255, 196, 0)
+  color: rgb(255, 196, 0);
 }
 
 .home {
@@ -780,20 +780,14 @@ input[type="submit"]:hover {
   font-weight: inherit;
 }
 
-.tipos-item:active {
-  background-color: rgb(255, 196, 0);
-  color: white;
-  font-weight: bold;
-}
-
-.tipos-item:focus {
-  background-color: rgb(255, 196, 0);
+.c-active { 
+  background-color: rgb(106, 0, 10);
   color: white;
   font-weight: bold;
 }
 
 .tipos-item:hover {
-  background-color: rgb(255, 196, 0);
+  background-color:rgb(255, 196, 0);
   color: white;
   font-weight: bold;
 }
