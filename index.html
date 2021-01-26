@@ -76,6 +76,30 @@
           })
           .scroll(); //invoke scroll-handler on page-load
       });
+      $(window).on("load", function () {
+        $(window)
+          .scroll(function () {
+            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+            $(".fadeScroll2").each(function () {
+              /* Check the location of each desired element */
+              var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+              /* If the element is completely within bounds of the window, fade it in */
+              if (objectBottom < windowBottom) {
+                //object comes into view (scrolling down)
+                if ($(this).css("opacity") == 0) {
+                  $(this).fadeTo(400, 1);
+                }
+              } else {
+                //object goes out of view (scrolling up)
+                if ($(this).css("opacity") == 1) {
+                  $(this).fadeTo(500, 0);
+                }
+              }
+            });
+          })
+          .scroll(); //invoke scroll-handler on page-load
+      });
     </script>
     <div class="form"></div>
     <img class="fita1" alt="fita 'cuidado, quente'" src="images/fita-up.png" />
@@ -240,10 +264,8 @@
         />
         <img
           src="images/premium-tex.png"
-          class="premium-tex"
+          class="premium-tex fadeScroll2"
           alt="pizza premium"
-          data-aos="fade"
-          data-aos-duration="500"
           width="300px"
         />
       </div>
