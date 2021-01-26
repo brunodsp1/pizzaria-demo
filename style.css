@@ -41,6 +41,10 @@ a {
   display: none !important;
 }
 
+.active {
+  font-weight: bold;
+}
+
 /* SOCIAL ICONS */
 .fa-whatsapp,
 .fa-phone,
@@ -175,6 +179,7 @@ li:last-child {
 
 .menu li a:hover {
   font-weight: bold;
+  color:rgb(255, 196, 0)
 }
 
 .home {
