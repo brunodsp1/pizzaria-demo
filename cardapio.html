@@ -17,6 +17,14 @@
   </head>
   <body>
     <script>
+      function changeClass(elClass) {
+        var divsLenght = document.getElementsByTagName("div").length;
+        for (var i = 0; i < divsLenght; i++) {
+          document.getElementsByTagName("div")[i].className = "tabInactive";
+        }
+        elClass.className = "tabActive";
+      }
+
       $("document").ready(function () {
         $("#ca-queijo").mouseenter(function () {
           $("#pizzas").attr("src", "images/ca-queijo.jpg");
