@@ -469,7 +469,7 @@ li:last-child {
 }
 
 .logo-foo {
-  width: 20%;
+  width: 30%;
 }
 .texto-foo {
   float: right;
@@ -479,7 +479,7 @@ li:last-child {
 .wrapper-texto-foo {
   display: flex;
   flex-direction: row-reverse;
-  width: 80%;
+  width: 70%;
 }
 
 .texto-foo h1 {
@@ -1250,8 +1250,8 @@ input[type="submit"]:hover {
   }
 
   .logo-foo img {
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
   }
 
   .wrapper-texto-foo {
