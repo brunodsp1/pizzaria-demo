@@ -15,303 +15,378 @@
       href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/2c153a1204.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script>
-      $(window).on("load", function () {
-        $(window)
-          .scroll(function () {
-            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-            $(".fadeScroll").each(function () {
-              /* Check the location of each desired element */
-              var objectBottom = $(this).offset().top + $(this).outerHeight();
+    <div style="overflow: hidden">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+      <script>
+        $(window).on("load", function () {
+          $(window)
+            .scroll(function () {
+              var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+              $(".fadeScroll").each(function () {
+                /* Check the location of each desired element */
+                var objectBottom = $(this).offset().top + $(this).outerHeight();
 
-              /* If the element is completely within bounds of the window, fade it in */
-              if (objectBottom < windowBottom) {
-                //object comes into view (scrolling down)
-                if ($(this).css("opacity") == 0) {
-                  $(this).fadeTo(500, 1);
+                /* If the element is completely within bounds of the window, fade it in */
+                if (objectBottom < windowBottom) {
+                  //object comes into view (scrolling down)
+                  if ($(this).css("opacity") == 0) {
+                    $(this).fadeTo(500, 1);
+                  }
+                } else {
+                  //object goes out of view (scrolling up)
+                  if ($(this).css("opacity") == 1) {
+                    $(this).fadeTo(500, 0);
+                  }
                 }
-              } else {
-                //object goes out of view (scrolling up)
-                if ($(this).css("opacity") == 1) {
-                  $(this).fadeTo(500, 0);
-                }
-              }
-            });
-          })
-          .scroll(); //invoke scroll-handler on page-load
-      });
-      $(window).on("load", function () {
-        $(window)
-          .scroll(function () {
-            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-            $(".fadeScroll1").each(function () {
-              /* Check the location of each desired element */
-              var objectBottom = $(this).offset().top + $(this).outerHeight();
+              });
+            })
+            .scroll(); //invoke scroll-handler on page-load
+        });
+        $(window).on("load", function () {
+          $(window)
+            .scroll(function () {
+              var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+              $(".fadeScroll1").each(function () {
+                /* Check the location of each desired element */
+                var objectBottom = $(this).offset().top + $(this).outerHeight();
 
-              /* If the element is completely within bounds of the window, fade it in */
-              if (objectBottom < windowBottom) {
-                //object comes into view (scrolling down)
-                if ($(this).css("opacity") == 0) {
-                  $(this).fadeTo(1100, 1);
+                /* If the element is completely within bounds of the window, fade it in */
+                if (objectBottom < windowBottom) {
+                  //object comes into view (scrolling down)
+                  if ($(this).css("opacity") == 0) {
+                    $(this).fadeTo(1100, 1);
+                  }
+                } else {
+                  //object goes out of view (scrolling up)
+                  if ($(this).css("opacity") == 1) {
+                    $(this).fadeTo(500, 0);
+                  }
                 }
-              } else {
-                //object goes out of view (scrolling up)
-                if ($(this).css("opacity") == 1) {
-                  $(this).fadeTo(500, 0);
-                }
-              }
-            });
-          })
-          .scroll(); //invoke scroll-handler on page-load
-      });
-      $(window).on("load", function () {
-        $(window)
-          .scroll(function () {
-            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-            $(".fadeScroll2").each(function () {
-              /* Check the location of each desired element */
-              var objectBottom = $(this).offset().top + $(this).outerHeight();
+              });
+            })
+            .scroll(); //invoke scroll-handler on page-load
+        });
+        $(window).on("load", function () {
+          $(window)
+            .scroll(function () {
+              var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+              $(".fadeScroll2").each(function () {
+                /* Check the location of each desired element */
+                var objectBottom = $(this).offset().top + $(this).outerHeight();
 
-              /* If the element is completely within bounds of the window, fade it in */
-              if (objectBottom < windowBottom) {
-                //object comes into view (scrolling down)
-                if ($(this).css("opacity") == 0) {
-                  $(this).fadeTo(400, 1);
+                /* If the element is completely within bounds of the window, fade it in */
+                if (objectBottom < windowBottom) {
+                  //object comes into view (scrolling down)
+                  if ($(this).css("opacity") == 0) {
+                    $(this).fadeTo(400, 1);
+                  }
+                } else {
+                  //object goes out of view (scrolling up)
+                  if ($(this).css("opacity") == 1) {
+                    $(this).fadeTo(500, 0);
+                  }
                 }
-              } else {
-                //object goes out of view (scrolling up)
-                if ($(this).css("opacity") == 1) {
-                  $(this).fadeTo(500, 0);
-                }
-              }
-            });
-          })
-          .scroll(); //invoke scroll-handler on page-load
-      });
-    </script>
-    <div class="form"></div>
-    <img class="fita1" alt="fita 'cuidado, quente'" src="images/fita-up.png" />
-    <img
-      class="fita2"
-      alt="fita 'cuidado, quente'"
-      src="images/fita-down.png"
-    />
-    <div class="menu">
-      <ul>
-        <li><a class="active" href="index.html">Promoções</a></li>
-        <li><a href="localizacao.html">Localização</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        <li><a href="cardapio.html">Cardápio</a></li>
-      </ul>
-    </div>
-    <div class="principal column">
-      <img class="logo-menu" src="images/logo.png" alt="logo" width="146px" />
-      <div class="wrapper column">
-        <div class="home column center">
-          <img class="fundo center" alt="pizza" src="images/pizza-home.webp" />
-          <a class="logo center" href="https://wa.me/999999999">
-            <img class="logo center" alt="logo" src="images/clique.png"
-          /></a>
-        </div>
-        <div class="promo row">
-          <div class="row fadeScroll">
-            <div class="promo-img">
-              <img
-                src="images/portuguesa.png"
-                alt="pizza portuguesa"
-                width="230px"
-              />
-            </div>
-            <div class="promo-text column">
-              <h1>PORTUGUESA</h1>
-              <ul>
-                <li>Muzzarela</li>
-                <li>Presunto</li>
-                <li>Cebola</li>
-                <li>Ovo</li>
-                <li>Ervilha</li>
-              </ul>
-              <div class="preco row">
-                <h2>R$</h2>
-                <h1>29</h1>
-                <h2>,00</h2>
-              </div>
-            </div>
-          </div>
-          <div class="row fadeScroll1">
-            <div class="promo-img">
-              <img
-                src="images/catupiry.png"
-                alt="pizza catupiry"
-                width="230px"
-              />
-            </div>
-            <div class="promo-text column">
-              <h1>CATUPIRY</h1>
-              <ul>
-                <li>Muzzarela</li>
-                <li>Frango Desfiado</li>
-                <li>Catupiry</li>
-              </ul>
-              <div class="preco row center">
-                <h2>R$</h2>
-                <h1>29</h1>
-                <h2>,00</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="oferta-esp row center">
-      <div class="wrapper row center">
-        <div class="oferta-esp-text column center">
-          <img src="images/oferta-especial.png" alt="oferta especial" />
-          <ul>
-            <li>Sabores Ingredientes etc aqui lorem ipsum ipsum lorem</li>
-          </ul>
-          <div class="preco-esp row center">
-            <h3>R$</h3>
-            <h2>34</h2>
-            <h3>,00</h3>
-          </div>
-        </div>
-        <div class="oferta-esp-img" data-aos="fade-left">
-          <img src="images/especial.png" alt="pizza especial" />
-        </div>
-      </div>
-    </div>
-    <div class="mais-pedidas column center"></div>
-    <div class="mais-content column center">
-      <div class="mais-wrapper column center">
-        <div class="title-pedidas">AS MAIS PEDIDAS</div>
-        <div class="pedidas-text row">
-          <div class="pedidas-item column center">
-            <div class="promo-img">
-              <img
-                src="images/calabresa.png"
-                alt="pizza calabresa"
-                width="200px"
-              />
-            </div>
-            <h1>CALABRESA</h1>
-            <h2>Calabresa fatiada coberta com cebola</h2>
-            <div class="preco-pedidas preco row">
-              <h2>R$</h2>
-              <h3>32</h3>
-              <h2>,00</h2>
-            </div>
-          </div>
-          <div class="pedidas-item column center">
-            <div class="promo-img">
-              <img
-                src="images/americana.png"
-                alt="pizza americana"
-                width="195px"
-              />
-            </div>
-            <h1>AMERICANA</h1>
-            <h2>Presunto, muzzarela, bacon e azeitonas</h2>
-            <div class="preco-pedidas preco row">
-              <h2>R$</h2>
-              <h3>32</h3>
-              <h2>,00</h2>
-            </div>
-          </div>
-          <div class="pedidas-item column center">
-            <div class="promo-img">
-              <img
-                src="images/frango.png"
-                alt="pizza de frango"
-                width="195px"
-              />
-            </div>
-            <h1>FRANGO</h1>
-            <h2>Frango desfiado, milho, catupiry e azeitonas</h2>
-            <div class="preco-pedidas preco row">
-              <h2>R$</h2>
-              <h3>32</h3>
-              <h2>,00</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="premium center">
+              });
+            })
+            .scroll(); //invoke scroll-handler on page-load
+        });
+      </script>
+      <div class="form"></div>
       <img
+        class="fita1"
+        alt="fita 'cuidado, quente'"
         src="images/fita-up.png"
-        class="fita-pr1"
-        alt="fita 'cuidado, quente'"
       />
-      <div class="premium-cont row center">
-        <img
-          src="images/coca.png"
-          class="coca"
-          data-aos="fade-right"
-          alt="coca cola"
-          width="100px"
-        />
-        <img
-          src="images/pizza-premium.png"
-          class="pizza-pr"
-          data-aos="fade-right"
-          alt="pizza premium"
-          width="400px"
-        />
-        <img
-          src="images/premium-tex.png"
-          class="premium-tex fadeScroll2"
-          alt="pizza premium"
-          width="300px"
-        />
-      </div>
       <img
-        src="images/fita-down.png"
-        class="fita-pr2"
+        class="fita2"
         alt="fita 'cuidado, quente'"
+        src="images/fita-down.png"
       />
-    </div>
-    <div class="footer row center">
-      <div class="wrapper-foo row">
-        <div class="logo-foo row">
-          <img src="images/logo.png" alt="logo" width="125px" />
+      <nav>
+        <div class="menu nav-links">
+          <ul>
+            <li>
+              <a class="active" href="index.html"
+                >Promoções <i class="fas fa-percent hidden active"></i>
+              </a>
+            </li>
+            <li>
+              <a href="localizacao.html"
+                >Localização
+                <i class="fa fa-map-marker hidden" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="contato.html"
+                >Contato <i class="far fa-comment-alt hidden"></i
+              ></a>
+            </li>
+            <li>
+              <a href="cardapio.html"
+                >Cardápio <i class="fas fa-concierge-bell hidden"></i
+              ></a>
+            </li>
+          </ul>
         </div>
-        <div class="wrapper-texto-foo">
-          <div class="texto-foo column center">
-            <h1>ENTRE EM CONTATO</h1>
-            <div class="rule"></div>
 
-            <div class="numero row center">
-              <div class="row center">
-                <i class="fa fa-whatsapp" style="font-size: 25px"></i>
-                <h2>(99) 9 9999-9999</h2>
+        <div class="mobile-menu">
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="principal column">
+        <img class="logo-menu" src="images/logo.png" alt="logo" width="146px" />
+        <div class="wrapper column">
+          <div class="home column center">
+            <img
+              class="fundo center"
+              alt="pizza"
+              src="images/pizza-home.webp"
+            />
+            <a class="logo center" href="https://wa.me/999999999">
+              <img class="logo center" alt="logo" src="images/clique.png"
+            /></a>
+          </div>
+          <div class="promo row">
+            <div class="row fadeScroll">
+              <div class="promo-img">
+                <img
+                  src="images/portuguesa.png"
+                  alt="pizza portuguesa"
+                  width="230px"
+                />
               </div>
-              <div class="row center">
-                <i class="fa fa-phone" style="font-size: 25px"></i>
-                <h2>(99) 9 9999-9999</h2>
+              <div class="promo-text column">
+                <h1>PORTUGUESA</h1>
+                <ul>
+                  <li>Muzzarela</li>
+                  <li>Presunto</li>
+                  <li>Cebola</li>
+                  <li>Ovo</li>
+                  <li>Ervilha</li>
+                </ul>
+                <div class="preco row">
+                  <h2>R$</h2>
+                  <h1>29</h1>
+                  <h2>,00</h2>
+                </div>
               </div>
-              <div class="mail-foo center row">
-                <a class="center row" href="mailto:pizzaria@pizzaria.com.br"
-                  ><i class="fa fa-envelope" style="font-size: 20px"></i>
-                  <h2>pizzaria@pizzaria.com.br</h2></a
-                >
+            </div>
+            <div class="row fadeScroll1">
+              <div class="promo-img">
+                <img
+                  src="images/catupiry.png"
+                  alt="pizza catupiry"
+                  width="230px"
+                />
+              </div>
+              <div class="promo-text column">
+                <h1>CATUPIRY</h1>
+                <ul>
+                  <li>Muzzarela</li>
+                  <li>Frango Desfiado</li>
+                  <li>Catupiry</li>
+                </ul>
+                <div class="preco row center">
+                  <h2>R$</h2>
+                  <h1>29</h1>
+                  <h2>,00</h2>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="oferta-esp row center">
+        <div class="wrapper row center">
+          <div class="oferta-esp-text column center">
+            <img src="images/oferta-especial.png" alt="oferta especial" />
+            <ul>
+              <li>Sabores Ingredientes etc aqui lorem ipsum ipsum lorem</li>
+            </ul>
+            <div class="preco-esp row center">
+              <h3>R$</h3>
+              <h2>34</h2>
+              <h3>,00</h3>
+            </div>
+          </div>
+          <div class="oferta-esp-img" data-aos="fade-left">
+            <img src="images/especial.png" alt="pizza especial" />
+          </div>
+        </div>
+      </div>
+      <div class="mais-pedidas column center"></div>
+      <div class="mais-content column center">
+        <div class="mais-wrapper column center">
+          <div class="title-pedidas">AS MAIS PEDIDAS</div>
+          <div class="pedidas-text row">
+            <div class="pedidas-item column center">
+              <div class="promo-img">
+                <img
+                  src="images/calabresa.png"
+                  alt="pizza calabresa"
+                  width="200px"
+                />
+              </div>
+              <h1>CALABRESA</h1>
+              <h2>Calabresa fatiada coberta com cebola</h2>
+              <div class="preco-pedidas preco row">
+                <h2>R$</h2>
+                <h3>32</h3>
+                <h2>,00</h2>
+              </div>
+            </div>
+            <div class="pedidas-item column center">
+              <div class="promo-img">
+                <img
+                  src="images/americana.png"
+                  alt="pizza americana"
+                  width="195px"
+                />
+              </div>
+              <h1>AMERICANA</h1>
+              <h2>Presunto, muzzarela, bacon e azeitonas</h2>
+              <div class="preco-pedidas preco row">
+                <h2>R$</h2>
+                <h3>32</h3>
+                <h2>,00</h2>
+              </div>
+            </div>
+            <div class="pedidas-item column center">
+              <div class="promo-img">
+                <img
+                  src="images/frango.png"
+                  alt="pizza de frango"
+                  width="195px"
+                />
+              </div>
+              <h1>FRANGO</h1>
+              <h2>Frango desfiado, milho, catupiry e azeitonas</h2>
+              <div class="preco-pedidas preco row">
+                <h2>R$</h2>
+                <h3>32</h3>
+                <h2>,00</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="premium center">
+        <img
+          src="images/fita-up.png"
+          class="fita-pr1"
+          alt="fita 'cuidado, quente'"
+        />
+        <div class="premium-cont row center">
+          <img
+            src="images/coca.png"
+            class="coca"
+            data-aos="fade-right"
+            alt="coca cola"
+            width="100px"
+          />
+          <img
+            src="images/pizza-premium.png"
+            class="pizza-pr"
+            data-aos="fade-right"
+            alt="pizza premium"
+            width="400px"
+          />
+          <img
+            src="images/premium-tex.png"
+            class="premium-tex fadeScroll2"
+            alt="pizza premium"
+            width="300px"
+          />
+        </div>
+        <img
+          src="images/fita-down.png"
+          class="fita-pr2"
+          alt="fita 'cuidado, quente'"
+        />
+      </div>
+      <div class="footer row center">
+        <div class="wrapper-foo row">
+          <div class="logo-foo row">
+            <img src="images/logo.png" alt="logo" width="125px" />
+          </div>
+          <div class="wrapper-texto-foo">
+            <div class="texto-foo column center">
+              <h1>ENTRE EM CONTATO</h1>
+              <div class="rule"></div>
+
+              <div class="numero row center">
+                <div class="row center">
+                  <i class="fa fa-whatsapp" style="font-size: 25px"></i>
+                  <h2>(99) 9 9999-9999</h2>
+                </div>
+                <div class="row center">
+                  <i class="fa fa-phone" style="font-size: 25px"></i>
+                  <h2>(99) 9 9999-9999</h2>
+                </div>
+                <div class="mail-foo center row">
+                  <a class="center row" href="mailto:pizzaria@pizzaria.com.br"
+                    ><i class="fa fa-envelope" style="font-size: 20px"></i>
+                    <h2>pizzaria@pizzaria.com.br</h2></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        if (document.documentElement.clientWidth < 900) {
+          const navSlide = () => {
+            const burger = document.querySelector(".burger");
+            const nav = document.querySelector(".nav-links");
+            const navLinks = document.querySelectorAll(".nav-links li");
+
+            navLinks.forEach((link, index) => {
+              link.addEventListener("click", (e) => {
+                e.preventDefault();
+                burger.classList.toggle("toggle");
+                nav.classList.toggle("nav-active");
+                navLinks.forEach(setStyleLink);
+              });
+            });
+
+            burger.addEventListener("click", () => {
+              // Toggle Nav
+              nav.classList.toggle("nav-active");
+              // animate navlinks
+              navLinks.forEach(setStyleLink);
+              // burger animation
+              burger.classList.toggle("toggle");
+            });
+          };
+
+          function setStyleLink(el, index) {
+            if (el.style.animation) {
+              el.style.animation = "";
+            } else {
+              el.style.animation = `navLinkFade 0.5s ease forwards ${
+                index / 7 + 0.5
+              }s`;
+            }
+          }
+          navSlide();
+        }
+      </script>
     </div>
   </body>
 </html>
