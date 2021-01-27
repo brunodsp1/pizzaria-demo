@@ -811,7 +811,9 @@ input[type="submit"]:hover {
     padding: 0;
   }
 
-c
+  .logo-menu {
+    display: none;
+  }
 
   .form {
     background-image: none;
@@ -1264,7 +1266,7 @@ c
   /* LOCALIZAÇÃO */
 
   .form-pages {
-    display:block !important;
+    display: block !important;
   }
 
   .logo-menu1 {
@@ -1292,12 +1294,12 @@ c
     width: 100%;
     margin-top: 30px;
   }
-  
+
   .texto-local h2 {
     color: black;
     font-size: 0.82em !important;
   }
-  
+
   .texto-local h3 {
     color: black;
     width: 70%;
@@ -1306,7 +1308,7 @@ c
     margin-top: 20px;
     border-top: 2px solid rgba(106, 0, 10, 0.5);
   }
-  
+
   @media only screen and (max-device-width: 400px) {
     .home {
       height: 60vh;
