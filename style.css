@@ -1289,6 +1289,11 @@ input[type="submit"]:hover {
     width: 85%;
   }
 
+  
+.titulo-local h2 {
+  font-size: 2em;
+}
+
   iframe {
     width: 100% !important;
   }
