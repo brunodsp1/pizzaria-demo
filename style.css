@@ -809,17 +809,59 @@ input[type="submit"]:hover {
     display: none;
     padding: 0;
   }
+
+  .logo-menu {
+    display: none;
+    padding: 0;
+  }
+
+  .form {
+    background-image: none;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom 100px right 50%;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 50% 30%, 0 20%);
+  }
+
+  .home {
+    height: 50vh;
+    position: relative;
+    z-index: 0;
+  }
+
   .fundo {
     width: 280px;
     height: auto;
   }
+
   .promo {
     flex-direction: column;
   }
 
   .logo {
+    display:block;
     width: 100px;
     height: auto;
+  }
+
+  .logo img{
+    content:url("images/logo.png") !important;
+  }
+
+  .fita1 {
+    padding-top: 130px;
+  }
+  
+  .fita2 {
+    margin-top: 250px;
+    z-index: 5;
   }
 
   .pedidas-text {
@@ -831,7 +873,7 @@ input[type="submit"]:hover {
     display: -ms-flexbox;
     display: flex;
     position: fixed;
-    left: 80%;
+    left: 74%;
     -ms-flex-pack: distribute;
     justify-content: flex-end;
     -webkit-box-align: center;
@@ -841,6 +883,7 @@ input[type="submit"]:hover {
     background-color: rgba(106, 0, 10, 0);
     font-family: "Poppins", sans-serif;
     z-index: 100;
+    padding: 10px;
   }
 
   nav .logo {
@@ -1016,6 +1059,147 @@ input[type="submit"]:hover {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 
+/* PROMO */
+.promo {
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.promo-img {
+  margin: auto;
+  width: 60%;
+}
+
+.promo-text {
+  margin-left: 10px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  width: 40%;
+}
+
+.promo-text h1 {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 7px;
+}
+
+
+.promo-text li {
+  margin-left: 1em;
+  font-size: 10pt !important;
+  list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAN0lEQVQoU2NkIBIwIqv7z8DwH5nPyMAAl4cz0BXBNMAUgxXiUoSseKAV4nMnimdgjiYqeAiFOwCJjBAL+kUG2wAAAABJRU5ErkJggg==");
+}
+
+.preco {
+  background-color: white;
+  height: 60px;
+  clip-path: polygon(
+    0 8%,
+    83% 0,
+    70% 10%,
+    100% 5%,
+    100% 90%,
+    15% 100%,
+    30% 80%,
+    0 90%
+  );
+  padding: 10px;
+  margin-top: 7px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+  /* OFERTA ESPECIAL */
+  .oferta-esp {
+    width: 100%;
+    height: 180px;
+    background-image: url("images/especial-mobile.jpg");
+    background-size: cover;
+    background-position-x: right;
+  }
+
+  .oferta-esp-text img {
+    margin-bottom: 15px;
+    width: 150px;
+    height: auto;
+  }
+
+  .oferta-esp-text ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .oferta-esp-text h2 {
+    font-size: 3em;
+    font-weight: 900;
+  }
+
+  .oferta-esp-text li {
+    margin-left: 1em;
+    font-size: 9pt !important;
+    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAN0lEQVQoU2NkIBIwIqv7z8DwH5nPyMAAl4cz0BXBNMAUgxXiUoSseKAV4nMnimdgjiYqeAiFOwCJjBAL+kUG2wAAAABJRU5ErkJggg==");
+  }
+
+  .oferta-esp-img img {
+    height: auto;
+    width: 400px;
+  }
+
+/*  PREMIUM */
+
+.premium {
+  width: 100%;
+  height: 150px;
+  background-image: url("images/fogo.png");
+  background-position: bottom;
+  background-color: #6a000a;
+  box-shadow: inset 0 0 0 2000px rgba(106, 0, 10, 0.7);
+}
+
+.fita-pr1 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: -230px;
+}
+
+.coca {
+  position: relative;
+  transform: rotate(-10deg);
+  left: -35%;
+  z-index: 5;
+  bottom: 250px;
+  width: 80px;
+}
+
+.pizza-pr {
+  position: relative;
+  left: 0;
+  z-index: 4;
+  bottom: 500px;
+  width: 300px;
+  left:-10%;
+}
+
+.premium-tex {
+  position: relative;
+  bottom: 720px;
+  width: 230px;
+  left: 20%;
+  z-index: 6;
+}
+
+.fita-pr2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  bottom: 650px;
+}
+
+
   /* FOOTER */
   .numero {
     flex-direction: column;
@@ -1026,9 +1210,9 @@ input[type="submit"]:hover {
     height: 65px;
   }
 
-.wrapper-texto-foo {
-  width: 100%;
-}
+  .wrapper-texto-foo {
+    width: 100%;
+  }
 
   .rule {
     width: 95%;
@@ -1052,13 +1236,13 @@ input[type="submit"]:hover {
     font-size: 10pt !important;
   }
   .numero h2 {
-    margin:0;
+    margin: 0;
   }
 
   .wpp-foo .fa-whatsapp {
-    margin-left:0;
+    margin-left: 0;
   }
-  
+
   .mail-foo {
     padding-top: 10px;
   }
