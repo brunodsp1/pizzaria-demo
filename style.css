@@ -873,7 +873,7 @@ input[type="submit"]:hover {
     display: -ms-flexbox;
     display: flex;
     position: fixed;
-    left: 74%;
+    left: 77%;
     -ms-flex-pack: distribute;
     justify-content: flex-end;
     -webkit-box-align: center;
@@ -900,10 +900,12 @@ input[type="submit"]:hover {
     justify-content: space-around;
     width: 0%;
     overflow-x: hidden;
+    z-index: 1001;
   }
 
   nav .nav-links li {
     list-style: none;
+    z-index: 1001;
   }
 
   nav .nav-links li a {
@@ -912,6 +914,7 @@ input[type="submit"]:hover {
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 0.8rem;
+    z-index: 1001;
   }
 
   .active {
@@ -928,13 +931,13 @@ input[type="submit"]:hover {
   nav .burger {
     display: none;
     background-color: rgb(106, 0, 10);
-    padding: 20px;
+    padding: 15px;
     border-radius: 200px;
     box-shadow: 1px 5px 10px rgba(34, 33, 33, 0.7);
   }
 
   nav .burger div {
-    width: 33px;
+    width: 30px;
     height: 3px;
     background-color: rgb(255, 196, 0);
     margin: 8px;
@@ -1317,7 +1320,7 @@ input[type="submit"]:hover {
     }
 
     nav {
-      left: 70%;
+      left: 74%;
     }
 
     .coca {
@@ -1332,7 +1335,7 @@ input[type="submit"]:hover {
     .premium-tex {
       width: 210px !important;
       left: 19% !important;
-      bottom: 670px !important;
+      bottom: 650px !important;
     }
   }
 }
