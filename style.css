@@ -999,7 +999,7 @@ input[type="submit"]:hover {
       border-right: 0;
       font-size: 14pt;
       line-height: 18pt;
-      border-top: 2px solid grey;
+      border-top: 2px solid white;
     }
 
     body .nav-links li a {
