@@ -5,17 +5,24 @@
   font-size: 11pt;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  color: #fff;
+  color: black;
   box-sizing: border-box;
   border: none;
   outline: none;
 }
 
+
+h1, h2 {
+  color:white;
+}
 img {
   max-width: 100%;
 }
 ul {
   list-style: none;
+}
+ul li{
+  color:white;
 }
 a {
   text-decoration: none;
@@ -367,6 +374,7 @@ li:last-child {
 
 .title-pedidas {
   background-color: #6a000a;
+  color:white;
   padding: 10px;
 }
 
@@ -530,7 +538,7 @@ li:last-child {
 }
 
 .pag-contato {
-  margin-top: 150px;
+  padding-top: 150px;
 }
 
 .pag-contato,
@@ -585,8 +593,7 @@ li:last-child {
   margin-bottom: 20px;
 }
 
-input[type="text"],
-select {
+input[type="text"] {
   width: 48%; /* Full width */
   padding: 12px; /* Some padding */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -732,7 +739,7 @@ input[type="submit"]:hover {
 
 .cardapio {
   width: 100%;
-  margin-top: 80px;
+  padding-top: 80px;
   margin-bottom: 80px;
 }
 
@@ -1168,6 +1175,16 @@ input[type="submit"]:hover {
     width: 400px;
   }
 
+  .mais-pedidas {
+    height: 400px;
+    background-image: url("images/chef.jpg");
+    background-size: auto;
+  }
+  
+.title-pedidas {
+  font-size: 1.5em !important;
+}
+
   /*  PREMIUM */
 
   .premium {
@@ -1289,10 +1306,9 @@ input[type="submit"]:hover {
     width: 85%;
   }
 
-  
-.titulo-local h2 {
-  font-size: 2em;
-}
+  .titulo-local h2 {
+    font-size: 2em;
+  }
 
   iframe {
     width: 100% !important;
@@ -1316,6 +1332,189 @@ input[type="submit"]:hover {
     margin-top: 20px;
     border-top: 2px solid rgba(106, 0, 10, 0.5);
   }
+
+  /* CONTATO */
+
+  .pag-contato {
+    padding-top: 250px;
+  }
+
+  .wrapper-contato {
+    flex-direction: column;
+    width: 90%;
+    padding-bottom: 50px;
+  }
+
+  .pag-contato1 h1 {
+    background-color: black;
+    border-radius: 7px;
+  }
+
+  .contato-bt {
+    background-color: lightgray;
+    box-shadow: 1px 1px 10px rgba(34, 33, 33, 1);
+  }
+
+  .contato-bt:active,
+  input submit:active {
+    background-color: rgb(255, 196, 0);
+  }
+
+  .pag-contato-ou {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .ou-wrapper {
+    justify-content: center;
+    align-items: center;
+    width: 2.8em;
+  }
+
+  .pag-contato-ou h1 {
+    text-align: center;
+    margin: 0;
+    border: 1px solid black;
+  }
+
+  .pag-contato2 h1 {
+    background-color: black;
+    border-radius: 7px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border: 0px;
+    resize: vertical;
+    background-color: lightgray;
+    color: black;
+  }
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border: 0px;
+    background-color: lightgray;
+    resize: vertical;
+    color: black;
+  }
+
+  input[type="tel"] {
+    float: right;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border: 0px;
+    background-color: lightgray;
+    resize: vertical;
+    color: black;
+  }
+  input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border: 0px;
+    background-color: lightgray;
+    resize: vertical;
+    color: black;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    background-color: #222121;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  }
+
+  input[type="submit"]:hover {
+    background-color: rgb(255, 196, 0);
+    font-weight: bold;
+    color: black;
+  }
+
+  /* CARDAPIO */
+
+  .wrapper-car {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .cardapio {
+    padding-top: 270px;
+  }
+
+  .tipos {
+    display: none;
+  }
+
+  .tipos-mob {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tipos-mob h2 {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .select {
+    width: 100%;
+    height: 35px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    color: black !important;
+  }
+
+  select {
+    outline: none;
+    background-color: transparent;
+    padding: 8px 1em 0 5px;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    color: black !important;
+    cursor: inherit;
+    line-height: inherit;
+  }
+
+  .pizzas {
+    width: 100%;
+    padding: 0px;
+    padding-top: 0px;
+    border-left: 0px;
+  }
+
+  /* SCREENS TILL 400PX */
 
   @media only screen and (max-device-width: 400px) {
     .home {
